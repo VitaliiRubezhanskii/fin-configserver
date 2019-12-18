@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: configserver
-          image: configserver  #${REPOSITORY_TAG}
+          image: ${REPOSITORY_TAG}
           imagePullPolicy: Never
           ports:
             - containerPort: 8888
